@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="padding:0;">
+                <h1 class="title">Weather Dashboard</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 weather-nav">
+                <div class="wrapper">
+                    <!-- Sidebar -->
+                    <nav id="sidebar">
+                        <div class="sidebar-header">
+                            <h3>Weather Sidebar</h3>
+                        </div>
+                                <input class="city-search" type="text" placeholder="Search" aria-label="Search">
+                                <button type="submit" class="btn">Search</button>
+                        </div>
+                        <br>
+                        <p style="text-align:center;">History</pstyle="padding:0;>
+                        <ul class="history list-unstyled components">
+                            <!-- add new <li><a href= "website.com"></a> dynamically to create history list-->
+                        </ul>
+                    </nav>
+            </div>
+            <div class="col-md-9 weather-info">
+                <div class="row">
+                    <div class="col-md-12 current-info">
+                        <h2 class="city-name"></h2>
+                        <hr>
+                        <p class="temperature"></p>
+                        <p class="humidity"></p>
+                        <p class="wind-speed"></p>
+                        <p class="uv-index"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>5 Day Forecast</h3>
+                            </div>
+                        </div>
+                        <div class="row" id="5-day">
+                            <!-- insert 5 <div class="col-md-2 day1">Day 1</div> here with JS-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>  
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/script.js" ></script>  
+</body>
+</html>

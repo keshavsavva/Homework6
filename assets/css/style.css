@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+
+.title, .description, .date {
+    text-align: center;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    padding: 2%;
+    
+}
+
+body {
+    background-color: #eee;
+}
+
+.btn {
+    height: 90%;
+    font-size: 12px;
+    background-color: rgb(52, 124, 158);
+    text-align: center;
+    border-radius: 5px;
+    border: white 1px solid;
+    color: whitesmoke;
+}
+
+.weather-nav {
+    background-color: cadetblue;
+}
+
+.current-info {
+    border: grey 2px solid;
+    background-color:  rgb(28, 25, 218);
+    color: seashell;
+    margin-left: 1%;
+
+}
+
+p {
+    font-size: 22px;
+}
+.city-name {
+    margin: 10px;
+}
+
+.space {
+    margin: 1%;
+    font-size: 18px;
+    width: 100%;
+}
+
+.forecast {
+    background-color: rgb(28, 25, 218);
+    color: white;
+    margin: 1%;
+    padding: 1%;
+}
+
+.small {
+    font-size: 16px;
+}
