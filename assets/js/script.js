@@ -23,7 +23,6 @@ $(document).ready(function() {
             console.log(cityName);
             cityName = firstUpper(cityName);
             getCityInfo(cityName);
-            displayHistory();
             display5Day(cityName);
         }
     })
@@ -35,12 +34,12 @@ $(document).ready(function() {
             console.log(cityName);
             cityName = firstUpper(cityName);
             getCityInfo(cityName);
-            $("#5-day").empty();
             display5Day(cityName);
         }
     })
 
     function display5Day(cityName) {
+        $("#5-day").empty();
         var fiveDayURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + APIKey;
         $.ajax({
             url: fiveDayURL,
@@ -81,7 +80,7 @@ $(document).ready(function() {
             }
         } else {
             for(i = 0; i < 8; i++) {
-            newBtn = $("<button>").text(firstUpper(myCities[i])).attr("data-city", myCities[i]).addClass("btn");
+            newBtn = $("<button>").text(firstUpper(myCities[i])).attr("data-city", myCities[i]).addClass("btn space").attr("type", "city");
             newLi = $("<li>");
             $(".history").append(newLi);
             newLi.append(newBtn);
