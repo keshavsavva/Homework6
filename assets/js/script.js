@@ -24,10 +24,12 @@ $(document).ready(function() {
             cityName = firstUpper(cityName);
             getCityInfo(cityName);
             display5Day(cityName);
+            displayHistory();
         }
     })
     // history button click
-    $("button").on("click", function(event) {
+    $(".history").on("click", "button", function(event) {
+        console.log(event.target)
         if($(this).attr("type") === "city") {
             event.preventDefault();
             cityName = $(this).data("city");
